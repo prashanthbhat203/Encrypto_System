@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/nav_caesar_cipher">
+
+    <fragment
+        android:id="@+id/nav_caesar_cipher"
+        android:name="com.example.encrypto.ui.caesarCipher.CaesarCipherFragment"
+        android:label="@string/caesar_cipher"
+        tools:layout="@layout/fragment_caesar_cipher" />
+    <fragment
+        android:id="@+id/nav_play_fair_cipher"
+        android:name="com.example.encrypto.ui.playFairCipher.PlayFairCipherFragment"
+        android:label="@string/play_fair_cipher"
+        tools:layout="@layout/fragment_play_fair_cipher" />
+<!--    <fragment-->
+<!--        android:id="@+id/nav_hill_cipher"-->
+<!--        android:name="com.example.encrypto.ui.hillCipher.HillCipherFragment"-->
+<!--        android:label="@string/hill_cipher"-->
+<!--        tools:layout="@layout/fragment_hill_cipher" />-->
+    <fragment
+        android:id="@+id/nav_rsa"
+        android:name="com.example.encrypto.ui.rsa.RSAFragment"
+        android:label="@string/rsa"
+        tools:layout="@layout/fragment_rsa" />
+    <fragment
+        android:id="@+id/nav_diffie_hellman"
+        android:name="com.example.encrypto.ui.diffieHellman.DiffieHellmanFragment"
+        android:label="@string/diffie_hellman"
+        tools:layout="@layout/fragment_diffie_hellman" />
+    <fragment
+        android:id="@+id/nav_elgmal"
+        android:name="com.example.encrypto.ui.elgamal.ElGamalFragment"
+        android:label="@string/elgamal"
+        tools:layout="@layout/fragment_elgamal" />
+</navigation>

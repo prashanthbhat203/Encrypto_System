@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/symmetric"
+            android:title="@string/symmetric_encryption">
+
+            <menu>
+
+                <item
+                    android:id="@+id/nav_caesar_cipher"
+                    android:icon="@drawable/ic_one"
+                    android:title="@string/caesar_cipher" />
+
+                <item
+                    android:id="@+id/nav_play_fair_cipher"
+                    android:icon="@drawable/ic_two"
+                    android:title="@string/play_fair_cipher" />
+
+<!--                <item-->
+<!--                    android:id="@+id/nav_hill_cipher"-->
+<!--                    android:icon="@drawable/ic_three"-->
+<!--                    android:title="@string/hill_cipher" />-->
+            </menu>
+        </item>
+    </group>
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/asymmetric"
+            android:title="@string/asymmetric_encryption">
+
+            <menu>
+                <item
+                    android:id="@+id/nav_rsa"
+                    android:icon="@drawable/ic_one"
+                    android:title="@string/rsa" />
+                <item
+                    android:id="@+id/nav_diffie_hellman"
+                    android:icon="@drawable/ic_two"
+                    android:title="@string/diffie_hellman" />
+                <item
+                    android:id="@+id/nav_elgmal"
+                    android:icon="@drawable/ic_three"
+                    android:title="@string/elgamal" />
+            </menu>
+        </item>
+    </group>
+
+</menu>
